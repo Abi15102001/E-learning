@@ -1,0 +1,58 @@
+<nav class="absolute w-full top-0 left-0 h-screen z-50 {{ issbopen?'flex':'hidden'}}">
+  <div class="bg-white w-full sm:max-w-sm shadow-2xl">
+    <a class="flex justify-end p-5"><svg (click)="closesb()"  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 cursor-pointer">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+    </svg>
+    </a>
+    <div>
+      <div class="mt-3"><app-phone></app-phone></div>
+      <div class="mt-3"><app-email></app-email></div>
+      <div class="mt-6"><app-auth></app-auth></div>
+      <div class="mt-6"><app-menu></app-menu></div>
+      <div class="mt-6"><app-sociallinks></app-sociallinks></div>
+    </div>
+  </div>
+  <div (click)="closesb()" class="bg-gray-500 hidden md:block md:w-full opacity-70 "></div>
+</nav>
+
+<header class="absolute w-full ">
+  <div class="bg-slate-800 hidden lg:block">
+    <div class="container py-2 ">
+      <ul class="flex justify-between text-white gap-4">
+        <li>All courses are 25% off for <span class="text-emerald-600">Liberian people</span></li>
+        <li><img src="../assets/shapes/rightarrow.webp" alt=""></li>
+        <li >
+          <app-phone ></app-phone>
+        </li>
+        <li >
+         <app-email></app-email>
+        </li>
+        <li><img src="../assets/shapes/leftarrow.webp" alt=""> </li>
+        <li>
+          <app-sociallinks></app-sociallinks>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="px-5 z-40 {{isScrolled ? 'fixed top-0 w-full bg-white shadow-xl animate-fade-down animate-once':'pt-5'}}">
+  <div class="container flex items-center justify-between {{isScrolled ? '':'border'}} border-emerald-600 border-opacity-30 rounded-xl p-5 ">
+    <div><img src="../assets/logo.png" alt="" ></div>
+    <a  (click)="opensb()" class="lg:hidden cursor-pointer hover:animate-wiggle"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+    </svg>
+    </a>
+   <app-menu class="hidden lg:block z-10"></app-menu>
+
+   <app-auth class="hidden lg:block z-10"></app-auth>
+  </div>
+</div>
+
+</header>  
+<router-outlet></router-outlet>
+
+<app-footer></app-footer>
+
+<button *ngIf="isScrolled" (click)="scrollTop()" class="fixed bottom-5 right-5 w-8 h-8 hover:bg-slate-800 transition-all duration-500 bg-emerald-600 rounded-full "><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-6 text-white h-6 m-auto">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
+</svg>
+</button>

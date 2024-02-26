@@ -1,0 +1,7 @@
+<section *ngIf="show" class="bg-slate-900 flex absolute top-0 h-screen w-full z-50 bg-opacity-70">
+    <svg (click)="close()" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 cursor-pointer text-white absolute top-5 right-5">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+      </svg>
+      <iframe class="m-auto aspect-video w-[90%] md:w-[80%]" [src]="safeVideoUrl" allowfullscreen></iframe>
+      
+</section>

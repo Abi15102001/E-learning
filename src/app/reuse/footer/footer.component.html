@@ -1,0 +1,60 @@
+<section class="bg-emerald-50 mt-24 relative">
+    <img class="absolute top-8 left-5 animate-bounce animate-infinite animate-duration-[3000ms]" src="../../../assets/shapes/shape-21.png" alt="">
+    <img class="absolute bottom-8 right-5 animate-shake animate-infinite animate-duration-[3000ms]" src="../../../assets/shapes/shape-22.png" alt="">
+    <div class="container mx-auto px-5 py-16">
+        <div class="flex flex-wrap">
+            <div class="w-full md:w-1/2 order-1 lg:order-1 md:order-1 lg:w-1/3 xl:w-1/4 p-5 ">
+                <img src="../../../assets/logo.png" alt="">
+                <p class="mt-8 text-2xl">Caribbean Ct</p>
+                <p class=" mt-2 text-emerald-600 font-medium">Haymarket, Virginia (VA).</p>
+                <app-email class="mt-4 block  text-slate-600 font-medium" align="left"></app-email>
+                <app-phone class="mt-4 block  text-slate-600 font-medium" align="left"></app-phone>
+                <app-sociallinks class="mt-4 block" align="left"> </app-sociallinks>
+            </div>
+            <div class="w-full md:w-1/2 order-2 lg:order-2 md:order-3 lg:w-1/3 xl:w-1/4 p-5 ">
+                <h3 class="text-2xl">Category</h3>
+                <ul class="mt-8 text-slate-600 font-light">
+                    <li class="mt-3 hover:text-emerald-600"><a [routerLink]="['/','Creative']">Creative Writing</a></li>
+                    <li class="mt-3 hover:text-emerald-600"><a [routerLink]="['/','film']">film </a></li>
+                    <li class="mt-3 hover:text-emerald-600"><a [routerLink]="['/','graphic']"></a>Graphic Design</li>
+                    <li class="mt-3 hover:text-emerald-600"><a [routerLink]="['/','ui']"></a>UI/UX Design</li>
+                    <li class="mt-3 hover:text-emerald-600"><a [routerLink]="['/','business']"></a>Business Analytics</li>
+                    <li class="mt-3 hover:text-emerald-600"><a [routerLink]="['/','marketing']"></a>Marketing</li>
+                </ul>
+            </div>
+            <div class="w-full md:w-1/2 order-3 lg:order-3 md:order-4 lg:w-1/3 xl:w-1/4 p-5 ">
+                <h3 class="text-2xl ">Quick Links</h3>
+                <ul class="mt-8 text-slate-700 font-light ">
+                    <li class="mt-2 hover:text-emerald-600"><a [routerLink]="['/','privacy']">Privacy Policy</a></li>
+                    <li class="mt-2 hover:text-emerald-600"><a [routerLink]="['/','discussion']">Discussion</a></li>
+                    <li class="mt-2 hover:text-emerald-600"><a [routerLink]="['/','terms']">Terms & Conditions</a></li>
+                    <li class="mt-2 hover:text-emerald-600"><a [routerLink]="['/','customer']">Customer</a></li>
+                    <li class="mt-2 hover:text-emerald-600"><a [routerLink]="['/','course']">Course FAQ's</a></li>
+                </ul>
+         </div>
+            <div class="w-full md:w-1/2 order-4 lg:order-4 md:order-2 lg:w-1/3 xl:w-1/4 p-5 ">
+                <h3 class="text-2xl">Subscribe</h3>
+                <p class="mt-8 text-slate-700 font-light">Lorem, ipsum dolor sit amet consectetur adipisror molestias sequi.</p>
+                <app-subscribe-form> </app-subscribe-form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-slate-900  text-slate-200 text-sm  ">
+<div class="container mx-auto py-4">
+    <div class="flex flex-wrap">
+        <div class="w-full lg:w-1/2 ">
+            <ul class="flex flex-wrap gap-3 justify-center lg:justify-start">
+                <li><a class="hover:text-emerald-600"  [routerLink]="['']">Terms of Service</a></li>
+                <li><a class="hover:text-emerald-600" [routerLink]="['']">Privacy Policy</a> </li>
+                <li><a class="hover:text-emerald-600" [routerLink]="['']">SiteMap</a></li>
+                <li><a class="hover:text-emerald-600" [routerLink]="['']">Security</a></li>
+            </ul>
+        </div>
+        <div class="w-full lg:w-1/2 text-center lg:text-right pt-5 lg:pt-0  ">
+            © 2021 <span class="text-emerald-600">EDULE</span> Made with  by  <span class="text-emerald-600">Codecarnival</span> 
+        </div>
+    </div>
+</div>
+</section>

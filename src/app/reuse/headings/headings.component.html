@@ -1,0 +1,17 @@
+<div class="container mx-auto">
+  <p class="text-xl text-emerald-600 font-medium mb-3 text-center {{align==='C'?'md:text-center':'md:text-left'}}">{{ subHeading }}</p>
+  <h2 class="text-3xl md:text-4xl font-medium text-center {{align==='C'?'md:text-center':'md:text-left'}}">
+    <span class="relative {{ specialHeading == 1 ? 'text-emerald-600' : '' }}"
+      >{{ headingText1 }}
+      <span *ngIf="specialHeading==1" class="absolute -bottom-3 w-28 right-0"><img src="../../../assets/shapes/shape-4.webp" alt=""></span>
+    </span>
+    <span  class="relative {{ specialHeading == 2 ? 'text-emerald-600' : '' }}"
+      >{{ headingText2 }}
+      <span *ngIf="specialHeading==2" class="absolute -bottom-3 w-28 right-0"><img src="../../../assets/shapes/shape-4.webp" alt=""></span>
+    </span>
+    <span class="relative {{ specialHeading == 3 ? 'text-emerald-600' : '' }}"
+      >{{ headingText3 }}
+      <span *ngIf="specialHeading==3" class="absolute -bottom-3 w-28 right-0"><img src="../../../assets/shapes/shape-4.webp" alt=""></span>
+    </span>
+  </h2>
+</div>

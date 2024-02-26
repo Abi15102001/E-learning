@@ -1,0 +1,45 @@
+<section class="pt-22">
+  <!-- <div class="container mx-auto flex flex-wrap ">
+        <app-card [input]="course" *ngFor="let course of coursesList" type="C" class="w-1/3 p-3"></app-card>
+    </div> -->
+  <app-headings
+    class="my-16 block"
+    subHeading=""
+    headingText1="All"
+    headingText2="Courses"
+    headingText3="of Edule"
+    specialHeading="2"
+    align="L"
+  >
+  </app-headings>
+  <div class="container mx-auto">
+    <app-slider
+      class="block rounded-3xl p-2 py-5 sm:p-10 bg-emerald-50"
+      *ngIf="this.categories.length > 0"
+      [items]="this.categories"
+      (select)="filterCourses($event)">
+    
+      <ng-template #defaulttemplate let-items> 
+        {{items}}
+      </ng-template>
+    </app-slider>
+  </div>
+  <div
+    class="container mx-auto mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+  >
+    <app-card
+      *ngFor="let Course of filteredCoursesList"
+      type="C"
+      class="w-full"
+      [input]="Course"
+    ></app-card>
+  </div>
+  <div class="mt-4 flex">
+    <app-buttons
+      class="m-auto mt-8"
+      name="Other Courses"
+      size="L"
+      shades="L"
+    ></app-buttons>
+  </div>
+</section>

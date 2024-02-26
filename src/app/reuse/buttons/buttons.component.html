@@ -1,0 +1,10 @@
+<button [routerLink]="route"  class="transition-all duration-500
+{{shades==='D'?'border bg-emerald-600 text-emerald-50 border-emerald-600 hover:text-slate-700 hover:bg-emerald-50':
+shades==='L'?'border bg-emerald-50 text-emerald-600 border-emerald-600 hover:text-emerald-50 hover:bg-emerald-600':
+ shades==='W'?'border bg-white text-slate-700 border-emerald-600  hover:text-emerald-50 hover:bg-emerald-600 ':
+ shades==='B'?'border bg-emerald-600 text-emerald-50 border-emerald-600 hover:bg-slate-800 hover:animate-shake animate-once animate-duration-100 ':
+ '  hover:text-emerald-600 text-slate-700'}} 
+{{size ==='S'?'rounded-lg font-medium text-lg p-2':
+size ==='M'?'px-7 py-3 rounded-lg font-medium text-lg':
+ size==='L'? 'px-8 py-3 rounded-lg font-semibold text-lg':
+ 'font-medium p-3'}}">{{name}}</button>
